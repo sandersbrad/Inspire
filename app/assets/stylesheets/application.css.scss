@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+  margin: 0;
+}
+
+.fadein {
+  -webkit-animation: fadein 0.5s ease 0s forwards;
+}
+
+.notice {
+  margin: 0;
+}
+
+.alert {
+  margin: 0;
+}
+
+#background, #background li {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: image_url('bryce-canyon-wallpaper-hd.jpg');
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#background {
+  margin: 0;
+  padding: 0;
+}
+
+.widgets {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.widgets > div {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+}
+
+#top-left {
+  background-color: black;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+#top-right {
+  background-color: black;
+  z-index: 5;
+  top: 0;
+  right: 0;
+}
+
+#center-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#center-middle {
+  text-align: center;
+  top: 50vh;
+  width: 100%;
+  background: none !important;
+  font-size: 15em;
+  color: white;
+  height: 100%;
+  padding-bottom: 50%;
+}
+
+#center-bottom {
+  bottom: 0;
+  width: 100%;
+}
+
+#bottom-left {
+  background-color: black;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom-right {
+  background-color: black;
+  bottom: 0;
+  right: 0;
+}
