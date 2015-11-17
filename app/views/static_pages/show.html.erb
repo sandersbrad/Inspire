@@ -11,10 +11,10 @@
     </ul>
     <div class="widgets">
       <div id="top-left">Test</div>
-      <div id="top-right"></div>
+      <div id="top-right"> <%= react_component('WeatherWidget') %> </div>
       <div id="center-top"></div>
-      <div id="center-middle">2:55</div>
-      <div id="center-bottom"></div>
+      <div id="center-middle"> <%= react_component('ClockWidget') %> </div>
+      <div id="center-bottom"> <%= react_component('JokesWidget') %> </div>
       <div id="bottom-left"></div>
       <div id="bottom-right"></div>
     </div>
